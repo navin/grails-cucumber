@@ -28,10 +28,12 @@ Run the following command to run through your cucumber tests.
 grails cucumber
 </pre>
 
+And a report will be generated in target/test-reports/html/cucumber.html
+
 h2. Next stps
 
 be able clean gems
+run one test (or test pattern) at a time
+run tests in 'development' mode - against a running server
 switch driver at build time - IE, firefox, chrome, etc
-produce a nice cucumber report and stick it in target/test-reports/html
-
 

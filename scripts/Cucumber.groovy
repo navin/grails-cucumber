@@ -31,7 +31,8 @@ target(cuke: "Run through the features ") {
     depends( installgems )
     functionalTestPhasePreparation()
     
-    jruby "-S $gemsDir/bin/cucumber test/features"
+    mkdir( dir: 'target/test-reports/html' )
+    jruby "-S $gemsDir/bin/cucumber test/features --format html --out target/test-reports/html/cucumber.html --format pretty"
     
     functionalTestPhaseCleanUp()
 }
