@@ -1,0 +1,37 @@
+h1. grails-cucumber
+
+grails-cucumber makes it possible to write cucumber tests in ruby/gherkin and have them executed against your grails application as a cucumber test phase. No need to have ruby installed, and will work with any additional gems you may wish to use.
+
+h2. Installing and configuring grails-cucumber
+
+Install the plugin by executing the standard installation command:
+<pre>grails install-plugin grails-cucumber</pre>
+
+Once installed a 'cucumber' script will be made available and a base directory structure will be created for your cucumber tests.
+<pre>
++ test/
++---- features/
++-------- step_definitions/
++-------- support/
+</pre>
+
+To use gems outside of cucumber (ie capybara, rspec) simply list them in BuildConfig.groovy as a list of gems.
+
+<pre>
+gems = [ 'capybara', 'rspec' ]
+</pre>
+
+h2. Running cucumber tests
+
+Run the following command to run through your cucumber tests.
+<pre>
+grails cucumber
+</pre>
+
+h2. Next stps
+
+be able clean gems
+switch driver at build time - IE, firefox, chrome, etc
+produce a nice cucumber report and stick it in target/test-reports/html
+
+
