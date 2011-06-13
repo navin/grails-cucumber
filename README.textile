@@ -9,10 +9,10 @@ Install the plugin by executing the standard installation command:
 
 Once installed a 'cucumber' script will be made available and a base directory structure will be created for your cucumber tests.
 <pre>
-+ test/
-+---- features/
-+-------- step_definitions/
-+-------- support/
+test/
+    features/
+        step_definitions/
+        support/
 </pre>
 
 To use gems outside of cucumber (ie capybara, rspec) simply list them in BuildConfig.groovy as a list of gems.
