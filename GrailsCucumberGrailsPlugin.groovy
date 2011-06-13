@@ -10,7 +10,6 @@ class GrailsCucumberGrailsPlugin {
             "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
     def title = "Grails Cucumber Plugin" // Headline display name of the plugin
     def author = "James Wolstenholme"
     def authorEmail = "j@meswolstenholme.com"
@@ -20,20 +19,6 @@ https://github.com/jwolstenholme/grails-cucumber
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/grails-cucumber"
-
-    // Extra (optional) plugin metadata
-    //
-    // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
-
-    // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
-
-    // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
-
-    // Location of the plugin's issue tracker.
-//    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
     def scm = [ url: "https://github.com/jwolstenholme/grails-cucumber" ]
