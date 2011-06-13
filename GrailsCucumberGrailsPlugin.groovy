@@ -12,10 +12,10 @@ class GrailsCucumberGrailsPlugin {
 
     // TODO Fill in these fields
     def title = "Grails Cucumber Plugin" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
+    def author = "James Wolstenholme"
+    def authorEmail = "j@meswolstenholme.com"
     def description = '''\
-Brief summary/description of the plugin.
+https://github.com/jwolstenholme/grails-cucumber
 '''
 
     // URL to the plugin's documentation
@@ -36,7 +36,7 @@ Brief summary/description of the plugin.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.grails-plugins.codehaus.org/browse/grails-plugins/" ]
+    def scm = [ url: "https://github.com/jwolstenholme/grails-cucumber" ]
 
 
     def doWithWebDescriptor = { xml ->
