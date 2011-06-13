@@ -1,0 +1,12 @@
+<plugin name='grails-cucumber' version='0.1' grailsVersion='1.4 &gt; *'>
+  <author>James Wolstenholme</author>
+  <authorEmail>j@meswolstenholme.com</authorEmail>
+  <title>Grails Cucumber Plugin</title>
+  <description>https://github.com/jwolstenholme/grails-cucumber
+</description>
+  <documentation>http://grails.org/plugin/grails-cucumber</documentation>
+  <type>GrailsCucumberGrailsPlugin</type>
+  <resources />
+  <dependencies />
+  <behavior />
+</plugin>
