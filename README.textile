@@ -21,6 +21,12 @@ To use gems outside of cucumber (ie capybara, rspec) simply list them in BuildCo
 gems = [ 'capybara', 'rspec' ]
 </pre>
 
+To clean up all gems execute the clean-gems script.
+
+<pre>
+grails clean-gems
+</pre>
+
 h2. Running cucumber tests
 
 Run the following command to run through your cucumber tests.
@@ -32,8 +38,7 @@ And a report will be generated in target/test-reports/html/cucumber.html
 
 h2. Next stps
 
-be able clean gems
+build needs to fail when tests fail
 run one test (or test pattern) at a time
 run tests in 'development' mode - against a running server
 switch driver at build time - IE, firefox, chrome, etc
-

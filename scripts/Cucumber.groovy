@@ -1,6 +1,7 @@
 @Grab(group='org.jruby', module='jruby-complete', version='1.5.6')
 
 import org.jruby.Main as JRuby
+import org.jruby.RubyInstanceConfig as RubyConf
 
 scriptEnv = "test"
 includeTargets << grailsScript("_GrailsTest")
@@ -12,11 +13,13 @@ def gemsToInstall = { gems ->
     gems.findAll { gem -> !installedGems.contains(gem) }
 }
 
-def jruby = { command -> 
-    new JRuby().run command.split()
+def jruby = { command ->
+    Thread.currentThread().setContextClassLoader(JRuby.class.classLoader) 
+    def rubyConf = new RubyConf(environment: ['GEM_HOME': "${gemsDir.absolutePath}"])
+    new JRuby(rubyConf).run command.split()
 }
 
-target(installgems: "Setup the environment for cucumber & friends") {
+target( installgems: "Setup the environment for cucumber & friends" ) {
     def gems = ['cucumber']
     if (buildConfig.gems) gems.addAll( buildConfig.gems )
     
@@ -27,7 +30,7 @@ target(installgems: "Setup the environment for cucumber & friends") {
     }
 }
 
-target(cuke: "Run through the features ") {
+target( cuke: "Run through the features" ) {
     depends( installgems )
     functionalTestPhasePreparation()
     
